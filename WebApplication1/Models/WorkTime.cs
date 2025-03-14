@@ -8,14 +8,14 @@
 
         public int ProfessorId { get; set; }
 
-        public Professor Professor { get; set; }
+        public ICollection<Professor> Professor { get; set; }
 
         public int CafedreId { get; set; }
 
-        public Cafedre Cafedre { get; set; }
+        public ICollection<Cafedre> Cafedre { get; set; }
 
         public int DisciplineId { get; set; }
 
-        public Discipline Discipline { get; set; }
+        public ICollection<Discipline> Discipline { get; set; }
     }
 }

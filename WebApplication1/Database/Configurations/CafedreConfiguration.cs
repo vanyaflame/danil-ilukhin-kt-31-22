@@ -5,10 +5,10 @@ using WebApplication1.Database.Helpers;
 
 namespace WebApplication1.Database.Configurations
 {
-    public class CafedresConfiguration :IEntityTypeConfiguration<Cafedre>
+    public class CafedreConfiguration :IEntityTypeConfiguration<Cafedre>
     {
         // Название таблицы которое будет отображаться в БД
-        private const string TableName = "cd_cafedres";
+        private const string TableName = "cd_cafedre";
 
         public void Configure(EntityTypeBuilder<Cafedre> builder) 
         {
@@ -36,7 +36,7 @@ namespace WebApplication1.Database.Configurations
             builder.Property(p => p.CafedreCreationDate)
                 .IsRequired()
                 .HasColumnName("c_cafedre_creation_date")
-                .HasColumnType(ColumnType.Date)
+                .HasColumnType(ColumnType.Int)
                 .HasComment("Дата основания кафедры");
 
             builder.Property(p => p.CafedreMainProfessor)
@@ -56,7 +56,7 @@ namespace WebApplication1.Database.Configurations
                 .HasMany(p => p.Professor)
                 .WithOne()
                 .HasForeignKey(p => p.ProfessorId)
-                .HasConstraintName("fk_f_professor_id")
+                .HasConstraintName("fk_f_professor_id_cafedre")
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Индексы
