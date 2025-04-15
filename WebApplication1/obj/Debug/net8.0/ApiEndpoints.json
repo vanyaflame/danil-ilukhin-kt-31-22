@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "WebApplication1.Controllers.CafedresController",
+    "Method": "GetCafedresByDateAsync",
+    "RelativePath": "Cafedres/GetCafedresByDate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.CafedreFilters.CafedreDateFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.CafedresController",
+    "Method": "GetCafedresByProfessorsAmountAsync",
+    "RelativePath": "Cafedres/GetCafedresByProfessorsAmount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.CafedreFilters.CafedreProfessorsAmountFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WorkTimeController",
+    "Method": "GetWorkTimeByCafedreAsync",
+    "RelativePath": "WorkTime/GetWorkTimeByCafedre",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.WorkTimeFilters.WorkTimeCafedreFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WorkTimeController",
+    "Method": "GetWorkTimeByDisciplineAsync",
+    "RelativePath": "WorkTime/GetWorkTimeByDiscipline",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.WorkTimeFilters.WorkTimeDisciplineFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WorkTimeController",
+    "Method": "GetWorkTimeByProfessorAsync",
+    "RelativePath": "WorkTime/GetWorkTimeByProfessor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "WebApplication1.Filters.WorkTimeFilters.WorkTimeProfessorFilter",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

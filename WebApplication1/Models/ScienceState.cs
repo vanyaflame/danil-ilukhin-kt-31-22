@@ -2,8 +2,7 @@
 {
     public class ScienceState
     {
-        public int ScienceStateId { get; set; }
-
-        public string ScienceStateName { get;   set; }
+        public int ScienceStateId { get; set; } // Идентификатор научной степени
+        public string ScienceStateName { get; set; } // Название научной степени
     }
 }

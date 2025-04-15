@@ -2,8 +2,7 @@
 {
     public class Title
     {
-        public int TitleId { get; set; }
-
-        public string TitleName { get; set; }
+        public int TitleId { get; set; } // Идентификатор записи должности
+        public string TitleName { get; set; } // Название должности
     }
 }

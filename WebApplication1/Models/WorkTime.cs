@@ -2,20 +2,14 @@
 {
     public class WorkTime
     {
-        public int WorkTimeId { get; set; }
+        public int WorkTimeId { get; set; } // Идентификатор рабочего времени
+        public int WorkTimeHours { get; set; } // Количество часов
+        public int ProfessorId { get; set; } // ID профессора
+        public int CafedreId { get; set; } // ID кафедры
+        public int DisciplineId { get; set; } // ID дисциплины
 
-        public int WorkTimeHours { get; set; }
-
-        public int ProfessorId { get; set; }
-
-        public ICollection<Professor> Professor { get; set; }
-
-        public int CafedreId { get; set; }
-
-        public ICollection<Cafedre> Cafedre { get; set; }
-
-        public int DisciplineId { get; set; }
-
-        public ICollection<Discipline> Discipline { get; set; }
+        public Professor Professor { get; set; } // Навигационное свойство для профессора
+        public Cafedre Cafedre { get; set; } // Навигационное свойство для кафедры
+        public Discipline Discipline { get; set; } // Навигационное свойство для дисциплины
     }
 }

@@ -1,9 +1,12 @@
-﻿namespace WebApplication1.Models
+﻿using System.Collections.Generic;
+
+namespace WebApplication1.Models
 {
     public class Discipline
     {
-        public int DisciplineId { get; set; }
+        public int DisciplineId { get; set; } // Идентификатор дисциплины
+        public string DisciplineName { get; set; } // Название дисциплины
 
-        public string DisciplineName { get; set; }
+        public ICollection<WorkTime> WorkTimes { get; set; } // Связь с рабочим временем
     }
 }

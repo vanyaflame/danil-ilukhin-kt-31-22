@@ -1,17 +1,15 @@
-﻿namespace WebApplication1.Models
+﻿using System.Collections.Generic;
+
+namespace WebApplication1.Models
 {
     public class Cafedre
     {
-        public int CafedreId { get; set; }
+        public int CafedreId { get; set; } // Идентификатор кафедры
+        public string CafedreName { get; set; } // Название кафедры
+        public int CafedreCreationDate { get; set; } // Дата основания
+        public string CafedreMainProfessor { get; set; } // Старший преподаватель кафедры
+        public int CafedreProfessorsAmount { get; set; }
 
-        public string CafedreName { get; set; }
-
-        public int CafedreCreationDate { get; set; }
-
-        public string CafedreMainProfessor { get; set; }
-
-        public int ProfessorId { get; set; }
-
-        public ICollection<Professor> Professor { get; set; }
+        public ICollection<Professor> Professors { get; set; } // Связь с профессорами
     }
 }
