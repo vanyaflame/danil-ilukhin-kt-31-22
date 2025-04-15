@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4vV7uTL8wvE=",
+  "dgSpecHash": "4b4iYnb+xEY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Source\\Repos\\danil-ilukhin-kt-31-22\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "D:\\Илюхин Данил\\проектный практикум\\git\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
