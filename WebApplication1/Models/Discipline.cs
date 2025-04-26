@@ -7,6 +7,5 @@ namespace WebApplication1.Models
         public int DisciplineId { get; set; } // Идентификатор дисциплины
         public string DisciplineName { get; set; } // Название дисциплины
 
-        public ICollection<WorkTime> WorkTimes { get; set; } // Связь с рабочим временем
     }
 }

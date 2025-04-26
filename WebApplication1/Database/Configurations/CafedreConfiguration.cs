@@ -27,7 +27,7 @@ namespace WebApplication1.Database.Configurations
             builder.Property(p => p.CafedreCreationDate)
                 .IsRequired()
                 .HasColumnName("c_cafedre_creation_date")
-                .HasColumnType("INT")
+                .HasColumnType("timestamp")
                 .HasComment("Дата основания кафедры");
 
             builder.Property(p => p.CafedreMainProfessor)

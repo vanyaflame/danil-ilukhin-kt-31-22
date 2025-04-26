@@ -12,6 +12,5 @@ namespace WebApplication1.Models
         public int CafedreId { get; set; } // ID кафедры
 
         public Cafedre Cafedre { get; set; } // Навигационное свойство для кафедры
-        public ICollection<WorkTime> WorkTimes { get; set; } // Связь с рабочим временем
     }
 }

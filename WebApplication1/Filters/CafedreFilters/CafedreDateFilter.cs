@@ -2,7 +2,7 @@
 {
     public class CafedreDateFilter
     {
-        public int CafedreCreationDate { get; set; }
+        public DateTime CafedreCreationDate { get; set; }
 
     }
 }

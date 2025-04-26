@@ -11,5 +11,6 @@
         public const string Long = "int8";
         public const string Decimal = "money";
         public const string Double = "numeric(9,2)";
+        public const string DateTime = "timestamp";
     }
 }

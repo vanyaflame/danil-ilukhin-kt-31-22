@@ -6,7 +6,7 @@ namespace WebApplication1.Models
     {
         public int CafedreId { get; set; } // Идентификатор кафедры
         public string CafedreName { get; set; } // Название кафедры
-        public int CafedreCreationDate { get; set; } // Дата основания
+        public DateTime CafedreCreationDate { get; set; } // Дата основания
         public string CafedreMainProfessor { get; set; } // Старший преподаватель кафедры
         public int CafedreProfessorsAmount { get; set; }
 
