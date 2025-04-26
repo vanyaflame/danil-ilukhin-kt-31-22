@@ -10,6 +10,26 @@
         "tags": [
           "Cafedres"
         ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -40,6 +60,26 @@
       "post": {
         "tags": [
           "Cafedres"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -167,8 +207,8 @@
         "type": "object",
         "properties": {
           "cafedreCreationDate": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

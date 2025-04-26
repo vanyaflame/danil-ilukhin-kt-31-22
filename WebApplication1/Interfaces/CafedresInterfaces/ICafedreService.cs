@@ -7,8 +7,8 @@ namespace WebApplication1.Interfaces.CafedresInterfaces
 {
     public interface ICafedreService
     {
-        public Task<Cafedre[]> GetCafedresByDateAsync(CafedreDateFilter filter, CancellationToken cancellationToken);
-        public Task<Cafedre[]> GetCafedresByProfessorsAmountAsync(CafedreProfessorsAmountFilter filter, CancellationToken cancellationToken);
+        public Task<Cafedre[]> GetCafedresByDateAsync(CafedreDateFilter filter, int pageNumber, int pageSize, CancellationToken cancellationToken);
+        public Task<Cafedre[]> GetCafedresByProfessorsAmountAsync(CafedreProfessorsAmountFilter filter, int pageNumber, int pageSize, CancellationToken cancellationToken);
     }
 
     public class CafedreService : ICafedreService
@@ -18,19 +18,33 @@ namespace WebApplication1.Interfaces.CafedresInterfaces
         {
             _dbContext = dbContext;
         }
-        public Task<Cafedre[]> GetCafedresByDateAsync(CafedreDateFilter filter, CancellationToken cancellationToken = default)
+        public async Task<Cafedre[]> GetCafedresByDateAsync(CafedreDateFilter filter, int pageNumber, int pageSize, CancellationToken cancellationToken = default)
         {
-            var cafedres =_dbContext.Set<Cafedre>().Where(w => w.CafedreCreationDate == filter.CafedreCreationDate).ToArrayAsync(cancellationToken);
+            var startDate = filter.CafedreCreationDate.Date;
+            var endDate = startDate.AddDays(1);
+
+            var cafedres = await _dbContext.Set<Cafedre>()
+                .Where(w => w.CafedreCreationDate >= startDate && w.CafedreCreationDate < endDate)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToArrayAsync(cancellationToken);
 
             return cafedres;
         }
 
-        public Task<Cafedre[]> GetCafedresByProfessorsAmountAsync(CafedreProfessorsAmountFilter filter, CancellationToken cancellationToken = default)
+
+
+        public async Task<Cafedre[]> GetCafedresByProfessorsAmountAsync(CafedreProfessorsAmountFilter filter, int pageNumber, int pageSize, CancellationToken cancellationToken = default)
         {
-            var cafedres = _dbContext.Set<Cafedre>().Where(w => w.CafedreProfessorsAmount == filter.CafedreProfessorsAmount).ToArrayAsync(cancellationToken);
+            var cafedres = await _dbContext.Set<Cafedre>()
+                .Where(w => w.CafedreProfessorsAmount == filter.CafedreProfessorsAmount)
+                .Skip((pageNumber - 1) * pageSize)  // Пропускаем записи
+                .Take(pageSize)                     // Ограничиваем выборку
+                .ToArrayAsync(cancellationToken);
 
             return cafedres;
         }
+
 
     }
 }
