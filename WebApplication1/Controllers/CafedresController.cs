@@ -22,6 +22,7 @@ namespace WebApplication1.Controllers
         public async Task<IActionResult> GetCafedresByDateAsync(CafedreDateFilter filter, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10, CancellationToken cancellationToken = default)
         {
             var cafedres = await _cafedreService.GetCafedresByDateAsync(filter, pageNumber, pageSize, cancellationToken);
+            throw new Exception();
             return Ok(cafedres);
         }
 

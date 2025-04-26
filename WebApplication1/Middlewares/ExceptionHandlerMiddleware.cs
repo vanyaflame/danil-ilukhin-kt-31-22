@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace IvanIvanovKt_31_20.Middlewares
+namespace WebApplication1.Middlewares
 {
     public class ExceptionHandlerMiddleware
     {

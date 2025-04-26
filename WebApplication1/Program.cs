@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
 using WebApplication1.Database;
-using static WebApplication1.ServiceExtensions.ServiceExtensions;
+using WebApplication1.ServiceExtensions;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +35,7 @@ try
 		app.UseSwaggerUI();
 	}
 
-	app.UseMiddleware<ExceptionHandlerMiddleware>();
+	app.UseMiddleware<WebApplication1.Middlewares.ExceptionHandlerMiddleware>();
 
 	app.UseAuthorization();
 
