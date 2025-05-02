@@ -1,0 +1,6 @@
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.csproj.AssemblyReference.cache
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.AssemblyInfoInputs.cache
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.AssemblyInfo.cs
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.csproj.CoreCompileInputs.cache
+D:\Илюхин Данил\проектный практикум\git\IlukhinDanilKt-31-22.Tests\obj\Debug\net9.0\IlukhinDanilKt-31-22.Tests.sourcelink.json

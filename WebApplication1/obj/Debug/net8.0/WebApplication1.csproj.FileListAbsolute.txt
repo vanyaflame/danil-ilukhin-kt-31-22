@@ -568,3 +568,4 @@ C:\Users\Администратор\Source\Repos\danil-ilukhin-kt-31-22\WebAppli
 C:\Users\Администратор\Source\Repos\danil-ilukhin-kt-31-22\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Администратор\Source\Repos\danil-ilukhin-kt-31-22\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Администратор\Source\Repos\danil-ilukhin-kt-31-22\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+D:\Илюхин Данил\проектный практикум\git\WebApplication1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
